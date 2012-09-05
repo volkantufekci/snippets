@@ -5,4 +5,7 @@ Ruby Style Guide => https://github.com/styleguide/ruby
 
 " hede hodo ".gsub(/\s+/, "") # "hedehodo"
 
+# returns given value if given key is not found in the hash
+hash.fetch(:order, :desc) # returns :desc if hash[:order] does not exist
+
 
