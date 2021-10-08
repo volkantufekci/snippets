@@ -1,3 +1,5 @@
+@Testcontainers
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ContextConfiguration(initializers = [ESIntegrationTest.Initializer::class])
 class ESIntegrationTest {
     companion object {
